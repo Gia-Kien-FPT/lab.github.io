@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+, initial-scale=1.0"
+    />
+    <title>Lab10 Cau1</title>
+    <style>
+      .from-group {
+        margin: 10px 0;
+        font-variant: small-caps;
+      }
+
+      label {
+        font-variant: small-caps;
+      }
+
+      .form-control {
+        width: 98%;
+        padding: 5px;
+        outline: none;
+        border: 1px solid gray;
+        border-radius: 3px;
+      }
+
+      .from-group label {
+        font-weight: bold;
+        font-variant: small-caps;
+      }
+
+      .form-control:focus {
+        background-color: yellow;
+        box-shadow: 0 0 3px red;
+        border: 1px solid yellow;
+      }
+
+      .form-button {
+        padding: 8px 30px;
+        outline: none;
+        border-radius: 20px;
+        font-weight: bold;
+        background-color: white;
+        color: orangered;
+        box-shadow: inset 0 0 20px blue;
+      }
+
+      .form-button:hover {
+        color: blue;
+        box-shadow: inset 0 0 20px gray;
+      }
+
+      .form-button:disabled {
+        color: darkgray;
+        box-shadow: inset 0 0 20 gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <div class="form-group" tabindex="1">
+        <label for=""> Họ và tên:</label>
+      </div>
+      <input type="text" class="form-control" />
+      <div class="form-group">
+        <label for="">Quốc tịch:</label>
+      </div>
+      <input type="text" readonly value="Việt Nam" />
+      <div class="form-group">
+        <label for="">Ghi chú:</label>
+      </div>
+      <textarea name="" id="" cols="50" rows="5"></textarea>
+      <hr />
+      <button class="form-button" tabindex="2">Thêm</button>
+      <button class="form-button" tabindex="3">Sửa</button>
+      <button class="form-button" tabindex="4" disabled>Xoá</button>
+    </form>
+  </body>
+</html>
